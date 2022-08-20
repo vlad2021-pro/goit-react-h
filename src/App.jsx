@@ -1,7 +1,9 @@
 import React from 'react'
-import { Profile } from "../components/Profile/Profile"
-import user from '../file-json/user.json'
-import {ProfileContainer, ProfileDescription, UsersName, ProfileName, ProfileStats, StatsList, StatsTitle, StatsQuantity} from '../Profile/Profile.styled'
+import { Profile } from "./components/profile/Profile"
+import { Statistics } from "./components/statistics/Statistics"
+import user from './file-json/user.json'
+import data from './file-json/data.json'
+
 
 
 export const App = () => {
@@ -13,6 +15,7 @@ export const App = () => {
       location={user.location}
       avatar={user.avatar}
       stats={user.stats} />
+      <Statistics  title="Upload stats" stats={data}  />
     </div>
     
   );

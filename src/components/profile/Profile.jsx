@@ -1,6 +1,6 @@
 import React from 'react'
-import {ProfileContainer, ProfileDescription, UserName, ProfileName, ProfileStats, StatsList, StatsTitle, StatsQuantity} from '../profile/Profile.styled'
-
+import {ProfileContainer, ProfileDescription, UserName, ProfileName, ProfileStats, StatsList, StatsTitle, StatsQuantity} from './Profile.styled'
+import PropTypes from 'prop-types'
 
 export const Profile = ({username, tag, location, avatar, stats : {followers, views, likes}}) => {
    return (  
@@ -35,6 +35,17 @@ export const Profile = ({username, tag, location, avatar, stats : {followers, vi
       )
  
    
+}
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+
 }
 
 export default Profile

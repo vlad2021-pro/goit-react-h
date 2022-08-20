@@ -32,7 +32,7 @@ font-weight: 700;
 color:grey;
 
 `
-export const UsersName = styled(ProfileName)`
+export const UserName = styled(ProfileName)`
 margin: 0;
 padding: 0;
 margin-bottom: 8px;
