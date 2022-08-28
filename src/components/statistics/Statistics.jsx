@@ -5,7 +5,7 @@ import {  StatContainer, StatTitle, StatList, StatItem, StatItemLabel, StatItemP
 
 
 
-        const Statistics = ({ title, stats }) => {
+       export const Statistics = ({ title, stats }) => {
             return (
               <StatContainer>
                 {title && <StatTitle>{title}</StatTitle>}
