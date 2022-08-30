@@ -25,12 +25,12 @@ import {  StatContainer, StatTitle, StatList, StatItem, StatItemLabel, StatItemP
                
           Statistics.proTotype = {
             title: PropTypes.string,
-            stats: PropTypes.shape({
+            stats: PropTypes.arrayOf (PropTypes.shape({
               id: PropTypes.string,
               label: PropTypes.string,
               percentage: PropTypes.number.isRequired
             }),
-          
+            )
           
           }
           export default Statistics
