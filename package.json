@@ -2,7 +2,7 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/vlad2021-pro/goit-react-hw-01-components.git"  ,
+  "homepage": "https://github.com/vlad2021-pro/goit-react-hw-01-components.git",
   "dependencies": {
     "@emotion/css": "^11.10.0",
     "@emotion/react": "^11.10.0",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1"
   }
 }
